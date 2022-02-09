@@ -1,6 +1,7 @@
 ############################################
-#Practice with plotting #######
-#Creator: Alex Dang ##########
+## Practice with plotting #######
+## Creator: Alex Dang ##########
+## Created on: 08FEB2022 #########
 ############################################
 
 ### Load libraries #########
@@ -8,7 +9,7 @@ library(palmerpenguins)
 library(tidyverse)
 
 ### Data analysis #########
-glimpse(penguins)
+glimpse(penguins) ##always need to load tidyverse first in order for glimpse function to work
 
 ### Plot practice #########
 ggplot(data=penguins, ##creating plot
@@ -19,7 +20,7 @@ ggplot(data=penguins, ##creating plot
                      size = body_mass_g, ##changing the size of points
                      alpha = flipper_length_mm)) +  ###changing the transparency of the points
   geom_point() + ##making the plot into a scatter plot
-  facet_grid(sex~species) + 
+  facet_grid(sex~species) + ##facet grid to add 2D grid
   guides(color = FALSE) +
   labs(title = "Bill depth and length", ##labeling and naming the labels
        subtitle = "Dimensions for Adelie, Chinstrap, Gentoo",
@@ -27,4 +28,3 @@ ggplot(data=penguins, ##creating plot
     #  color = "Species",
       caption = "Source: Palmer Station LTER / palmerpenguins pacakge") + 
   scale_colour_viridis_d() ##changing color
-##facet grid to add 2D grid

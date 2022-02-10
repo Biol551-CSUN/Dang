@@ -10,12 +10,12 @@
 ## **Folders:**
 Week 1: N/A
 
-[Week 2](https://github.com/Biol551-CSUN/Dang/tree/main/week_2): practice dataset and script in RStudio.
+Week 2: practice dataset and script in RStudio.
 * [Data](https://github.com/Biol551-CSUN/Dang/blob/main/week_2/data/weightdata.csv)
 * [Script](https://github.com/Biol551-CSUN/Dang/blob/main/week_2/scripts/week2scripts.R)
 * Output: N/A
 
-[Week 3](https://github.com/Biol551-CSUN/Dang/tree/main/week_3/scripts): practice plotting and data visualization with Palmerpenguins in RStudio.
+Week 3: practice plotting and data visualization with Palmerpenguins in RStudio.
 * Data: N/A
 * [Script](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/scripts/week3script.R)
 * Output: N/A

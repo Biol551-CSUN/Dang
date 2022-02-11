@@ -5,7 +5,7 @@
 
 **Description:** This repository serves as a place to practice coding and to upload weekly assingments and projects for the course BIO551/L of Spring 2022. It is organized by weekly with three subfolders of data, scripts, and output.
 
-**Projects:** [Tidy Tuesday](https://github.com/adang2011/Tidy-Tuesday)
+**Projects:** [Tidy Tuesday](https://github.com/adang2011/Tidy-Tuesday), Group Presentation, [Final Independent Project](https://github.com/Biol551-CSUN/Dang/blob/main/Dang.Rproj)
 
 > ##### _Always remember to pull, add, commit, and push_
 

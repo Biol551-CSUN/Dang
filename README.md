@@ -11,11 +11,16 @@
 Week 1: N/A
 
 Week 2: practice dataset and script in RStudio.
-* [Data](https://github.com/Biol551-CSUN/Dang/blob/main/week_2/data/weightdata.csv)
-* [Script](https://github.com/Biol551-CSUN/Dang/blob/main/week_2/scripts/week2scripts.R)
+* Data: [weight data](https://github.com/Biol551-CSUN/Dang/blob/main/week_2/data/weightdata.csv)
+* Script: [lab script](https://github.com/Biol551-CSUN/Dang/blob/main/week_2/scripts/week2scripts.R)
 * Output: N/A
 
 Week 3: practice plotting and data visualization with Palmerpenguins in RStudio.
-* Data: N/A
-* [Script](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/scripts/week3script.R)
-* Output: N/A
+* Data: Palmer penguin package
+* Script: [script day 1](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/scripts/week3script.R), [script day 2 lecture](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/scripts/week3day2.R), [script day 2 lab](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/scripts/week3day2lab.R)
+* Output: [Penguins plot practice](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/output/penguin-lecture.png), [Penguin Body Mass Plot](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/output/penguin-lab.png)
+
+Week 4:
+* Data:
+* Scripts:
+* Output:

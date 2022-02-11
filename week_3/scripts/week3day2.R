@@ -13,6 +13,7 @@ library(here)
 glimpse(penguins)
 
 ### Data analysis ################
+## Plot 1 #############
 plot1<-ggplot(data=penguins,
        mapping = aes(x = bill_depth_mm,
                      y = bill_length_mm,
@@ -37,5 +38,6 @@ plot1<-ggplot(data=penguins,
 ## coord_polar makes spiral plot
 
 ### Plot output ################
-ggsave(here("week_3", "output", "penguin.png"),      ## saves the plot to output folder
+ggsave(here("week_3", "output", "penguin-lecture.png"),      ## saves the plot to output folder
        width = 7, height = 5)   ## in inches
+

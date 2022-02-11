@@ -8,21 +8,19 @@
 > ##### _Always remember to pull, add, commit, and push_
 
 ## **Folders:**
-Week 1: N/A
+<u>Week 1:</u>  N/A
 
-Week 2: practice dataset and script in RStudio.
+<u>Week 2:</u> practice dataset and script in RStudio.
 * Data: [weight data](https://github.com/Biol551-CSUN/Dang/blob/main/week_2/data/weightdata.csv)
 * Script: [lab script](https://github.com/Biol551-CSUN/Dang/blob/main/week_2/scripts/week2scripts.R)
 * Output: N/A
 
-
-Week 3: practice plotting and data visualization with Palmerpenguins in RStudio.
+<u>Week 3:</u> practice plotting and data visualization with Palmerpenguins in RStudio.
 * Data: Palmer penguin package
 * Script: [day 1 script](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/scripts/week3script.R), [day 2 lecture script ](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/scripts/week3day2.R), [day 2  lab script](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/scripts/week3day2lab.R)
 * Output: [Penguins plot practice](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/output/penguin-lecture.png), [Penguin Body Mass Plot](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/output/penguin-lab.png)
 
-
-Week 4:
+<u>Week 4:</u>
 * Data:
 * Scripts:
 * Output:

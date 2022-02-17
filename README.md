@@ -23,6 +23,6 @@
 * Output: [Penguins plot practice](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/output/penguin-lecture.png), [Penguin Body Mass Plot](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/output/penguin-lab.png)
 
 <u>Week 4:</u>
-* Data:
-* Scripts:
-* Output:
+* Data: Palmer penguins package
+* Scripts: [day 1 lecture script](https://github.com/Biol551-CSUN/Dang/blob/main/week_4/scripts/scriptweek4day1.R), [day 1 lab script](https://github.com/Biol551-CSUN/Dang/blob/main/week_4/scripts/scriptweek4day1lab.R)
+* Output: [Comparing Body Mass Across Female Penguins Species](https://github.com/Biol551-CSUN/Dang/blob/main/week_4/output/penguins-female_log_body_mass-lab.png)

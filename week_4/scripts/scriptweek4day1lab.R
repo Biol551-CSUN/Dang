@@ -64,4 +64,4 @@ ggplot(data = data1,
 
 ## Plot output ######################
 ggsave(here("week_4", "output", "penguins-female_log_body_mass-lab.png"),      ## saves the plot to output folder
-       width = 7, height = 5)   ## in inches
+       width = 3, height = 3)   ## in inches

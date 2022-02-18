@@ -13,7 +13,6 @@ library(sysfonts)
 library(showtextdb)
 library(showtext)
 library(here)
-library(highcharter)
 
 glimpse(penguins)
 

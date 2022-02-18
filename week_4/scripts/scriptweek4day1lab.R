@@ -13,6 +13,7 @@ library(sysfonts)
 library(showtextdb)
 library(showtext)
 library(here)
+library(highcharter)
 
 glimpse(penguins)
 
@@ -39,10 +40,10 @@ view(data1)
    ## part 2
 showtext_auto()  ## automatically use showtext to render text
 
-ggplot(data = data1,
-       mapping = aes(x = species,
+ggplot(data = data1, 
+       mapping = aes(x = species, 
                      y = log_mass)) +    ## setting up the plot data
-  geom_boxplot(aes(fill = species)) +    ## selecting type of plot
+  geom_boxplot(aes(fill = species)) +       ## selecting type of plot
   scale_fill_manual(values = beyonce_palette(72)) +    ## adding colors to plot from beyonce palette
   labs(title = "Comparing Body Mass Across Female Penguins Species",   ## adding plot title
        x = "Species",                 ## adding x axis title

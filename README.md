@@ -14,23 +14,23 @@
 
 <u>Week 2:</u> practice dataset and script in RStudio.
 * Data: [weight data](https://github.com/Biol551-CSUN/Dang/blob/main/week_2/data/weightdata.csv)
-* Script: [lab script](https://github.com/Biol551-CSUN/Dang/blob/main/week_2/scripts/week2scripts.R)
+* Script: [lab](https://github.com/Biol551-CSUN/Dang/blob/main/week_2/scripts/week2scripts.R)
 * Output: N/A
 
 <u>Week 3:</u> practice plotting and data visualization with Palmerpenguins in RStudio.
 * Data: Palmer penguin package
-* Script: [day 1 script](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/scripts/week3script.R), [day 2 lecture script ](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/scripts/week3day2.R), [day 2  lab script](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/scripts/week3day2lab.R)
+* Script: [day 1 script](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/scripts/week3script.R), [day 2 lecture](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/scripts/week3day2.R), [day 2  lab](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/scripts/week3day2lab.R)
 * Output: [Penguins plot practice](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/output/penguin-lecture.png), [Penguin Body Mass Plot](https://github.com/Biol551-CSUN/Dang/blob/main/week_3/output/penguin-lab.png)
 
 <u>Week 4:</u> practice plotting with dplyr, including filter, mutate, separate, unite, and pivot
-* Data: Palmer penguins package, Maunalua Chemical Data
-* Scripts: [day 1 lecture script](https://github.com/Biol551-CSUN/Dang/blob/main/week_4/scripts/scriptweek4day1.R), [day 1 lab script](https://github.com/Biol551-CSUN/Dang/blob/main/week_4/scripts/scriptweek4day1lab.R), [day2 lecture script](https://github.com/Biol551-CSUN/Dang/blob/main/week_4/scripts/scriptweek4day2.R), [day 2 lab script](https://github.com/Biol551-CSUN/Dang/blob/main/week_4/scripts/scriptweek4day2lab.R)
+* Data: Palmer penguins package, [Maunalua Chemical Data](https://github.com/Biol551-CSUN/Dang/blob/main/week_4/data/chemicaldata_maunalua.csv)
+* Scripts: [day 1 lecture](https://github.com/Biol551-CSUN/Dang/blob/main/week_4/scripts/scriptweek4day1.R), [day 1 lab](https://github.com/Biol551-CSUN/Dang/blob/main/week_4/scripts/scriptweek4day1lab.R), [day2 lecture](https://github.com/Biol551-CSUN/Dang/blob/main/week_4/scripts/scriptweek4day2.R), [day 2 lab](https://github.com/Biol551-CSUN/Dang/blob/main/week_4/scripts/scriptweek4day2lab.R)
 * Output: [Comparing Body Mass Across Female Penguins Species Plot](https://github.com/Biol551-CSUN/Dang/blob/main/week_4/output/penguins-female_log_body_mass-lab.png), [Hawaii Biochemistry csv](https://github.com/Biol551-CSUN/Dang/blob/main/week_4/output/Hawaii_Biochemistry.csv), [Hawaii Biochemistry Plot](https://github.com/Biol551-CSUN/Dang/blob/main/week_4/output/Hawaii_Biochemistry.png)
 
-<u>Week 5:</u>
-* Data: 
-* Script: 
-* Output: 
+<u>Week 5:</u> practice data wranglig by joining data sets
+* Data: [Site Data](https://github.com/Biol551-CSUN/Dang/blob/main/week_5/data/site.characteristics.data.csv), [Top Data](https://github.com/Biol551-CSUN/Dang/blob/main/week_5/data/Topt_data.csv), [Conductivity Data](https://github.com/Biol551-CSUN/Dang/blob/main/week_5/data/CondData.csv), [Depth Data](https://github.com/Biol551-CSUN/Dang/blob/main/week_5/data/DepthData.csv)
+* Script: [day 1 lecture](https://github.com/Biol551-CSUN/Dang/blob/main/week_5/scripts/week5day1lecture.R), [day 2 lecture](https://github.com/Biol551-CSUN/Dang/blob/main/week_5/scripts/week5day2lecture.R), [day 2 lab](https://github.com/Biol551-CSUN/Dang/blob/main/week_5/scripts/week5day2lab.R)
+* Output: [Average Depth over Time csv](https://github.com/Biol551-CSUN/Dang/blob/main/week_5/output/AverageDepthOverTime.csv), [Average Depth over Time Plot](https://github.com/Biol551-CSUN/Dang/blob/main/week_5/output/AverageDepthOverTime.png)
 
 <u>Week 6:</u> 
 * Data: 

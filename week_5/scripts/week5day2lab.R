@@ -46,7 +46,7 @@ showtext_auto()  ## automatically use showtext to render text
 FullData %>%
   ggplot(mapping = aes(x = minute,                                          ## set up data plot
                        y = AvDepth)) +                                        
-  geom_jitter() +                                                           ## select type of plot
+  geom_jitter(size = 0.5) +                                                           ## select type of plot
   labs(title = "Average Depth Over Time",                                   ## add plot title
        x = "Time (mins)",                                                   ## add x axis title
        y = "Average Depth",                                                 ## add y axis title

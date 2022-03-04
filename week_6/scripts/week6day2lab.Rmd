@@ -1,0 +1,85 @@
+---
+title: "Looking at bee colony losses"
+author: "Alex Dang"
+date: "3/3/2022"
+output: 
+  html_document:
+    downcute_theme: "chaos"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE,
+                      fig.path = '../output/')
+```
+
+## Load libraries 
+Loading all the necessary R packages for plotting data
+
+```{r}
+library(kableExtra)
+library(tidyverse)
+library(here)
+library(sysfonts)
+library(showtextdb)
+library(showtext)
+library(beyonce)
+```
+
+## Adding fonts
+Adding fonts for plot by retrieving them from GoogleFonts browser
+
+```{r}
+font_add_google("Yanone Kaffeesatz", "yanone")
+```
+
+## Load data
+Pulling bee colony data frame
+
+```{r}
+BeeColony<-read_csv(here("week_6", "data", "colony.csv"))
+view(BeeColony)
+```
+
+## Data analysis
+### Data table
+First, set up data table with desired variables and values for plotting
+
+Data table to represent the bee colony losses in the 10 most populated states in America:
+```{r}
+most_pop<-BeeColony %>% 
+  drop_na() %>% 
+  filter(state == "California"| state == "Texas"| state == "Florida"| state == "New York"| state == "Pennsylvania"| 
+           state == "Illinois"| state == "Ohio"| state == "Georgia"| state == "North Carolina"| state == "Michigan") %>% 
+  select("year", "months", "state", "colony_max", "colony_lost")
+
+view(most_pop)
+
+most_pop %>% 
+  kbl() %>% 
+  kable_material() %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), 
+                full_width = FALSE, fixed_thead = T, position = "center", 
+                font_size = 12)
+```
+
+### Data plotting
+Now, plot the data
+```{r bees1, fig.width=8, fig.height=4, fig.asp=1.2, fig.align='center', fig.cap="Bee Colony plot"}
+showtext_auto() 
+most_pop %>% 
+  ggplot(aes(x = colony_max, y = colony_lost, color = state)) +
+  geom_point() +
+  labs(title = "Bee Colony Losses in the 10 Most Populated States of America",
+       x = "Max Colonies", y = "Colonies Lost",
+       caption = "Bee Colony Losses Data from USDA") +
+  theme(plot.title = element_text(size = 26, hjust = 0.5, family = "yanone"),
+        axis.title = element_text(size = 14),
+        panel.background = element_rect(fill = "beige"),
+        panel.border = element_rect(fill = NA, color = "black"), 
+        legend.key = element_rect(fill = "beige"),
+        legend.title = element_text(size = 16))
+```
+
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

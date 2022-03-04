@@ -1,0 +1,41 @@
+---
+title: "Practice with Rmarkdown week6day2"
+author: "Alex Dang"
+date: "3/3/2022"
+output: 
+  html_document:
+    theme: yeti
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE,
+                      fig.path = '../output/')
+```
+
+### Load libraries
+
+```{r}
+library(kableExtra)
+library(tidyverse)
+library(palmerpenguins)
+library(here)
+```
+
+### Make simple plot
+
+```{r penguin1, fig.width=3, fig.height=4, fig.asp=1.2, fig.align='center', fig.cap="Simple penguin plot"}
+penguins %>% 
+  ggplot(aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point()
+```
+
+## Practice making tables with kable
+```{r}
+penguins %>% 
+  group_by(species) %>% 
+  summarise(billmean = mean(bill_length_mm, na.rm = TRUE)) %>% 
+  kbl() %>%      ## make it a kable table
+  kable_classic() %>% 
+  row_spec(2, bold =  T, color = "white", background = "red") %>%   ## add aesthetics like bold/color/style
+  kable_styling(full_width = FALSE)
+```

@@ -32,7 +32,12 @@
 * Script: [day 1 lecture](https://github.com/Biol551-CSUN/Dang/blob/main/week_5/scripts/week5day1lecture.R), [day 2 lecture](https://github.com/Biol551-CSUN/Dang/blob/main/week_5/scripts/week5day2lecture.R), [day 2 lab](https://github.com/Biol551-CSUN/Dang/blob/main/week_5/scripts/week5day2lab.R)
 * Output: [Average Depth over Time csv](https://github.com/Biol551-CSUN/Dang/blob/main/week_5/output/AverageDepthOverTime.csv), [Average Depth over Time Plot](https://github.com/Biol551-CSUN/Dang/blob/main/week_5/output/AverageDepthOverTime.png)
 
-<u>Week 6:</u> 
-* Data: 
-* Script: 
-* Output: 
+<u>Week 6:</u> practice with Rmarkdown
+* Data: Palmer penguins package, [Bee Colony Losses from USDA](https://github.com/rfordatascience/tidytuesday/blob/master/data/2022/2022-01-11/readme.md)
+* Script: [day 2 lecture](https://github.com/Biol551-CSUN/Dang/blob/main/week_6/scripts/week6day2lecture.Rmd), [day2 lab](https://github.com/Biol551-CSUN/Dang/blob/main/week_6/scripts/week6day2lab.Rmd)
+* Output: [penguins1](https://github.com/Biol551-CSUN/Dang/blob/main/week_6/output/penguin1-1.png), [bees1](https://github.com/Biol551-CSUN/Dang/blob/main/week_6/output/bees1-1.png)
+
+<u> Week 7: <u>
+* Data:
+* Scripts:
+* Output:

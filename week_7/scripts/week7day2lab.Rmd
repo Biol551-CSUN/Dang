@@ -31,6 +31,7 @@ font_add_google("Yanone Kaffeesatz", "yanone")
 
 
 ## Load data frame
+[Chocolate data frame](https://github.com/Biol551-CSUN/Dang/blob/main/week_7/data/chocolate.csv)
 ```{r}
 Chocolate<-read_csv(here("week_7", "data", "chocolate.csv"))
 view(Chocolate)

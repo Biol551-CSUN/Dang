@@ -1,0 +1,56 @@
+---
+title: "Meteorites Plot Practice"
+author: "Alex Dang"
+date: "3/9/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE,
+                      fig.path = '../output/')
+```
+
+## Load libraries 
+
+```{r}
+library(tidyverse)
+library(here)
+library(maps)
+library(mapdata)
+library(mapproj)
+```
+
+## Load data
+``` {r}
+meteorites<-read_csv(here("week_7", "data", "meteorites.csv"))
+```
+
+## Data wrangling
+``` {r}
+world<-map_data("world")
+
+USA_CAN_MEX<-world %>% 
+  filter(region == c("USA", "Canada", "Mexico"))
+## filter to USA, Canada, and Mexico
+view(USA_CAN_MEX)
+```
+
+## Data analysis
+```{r}
+ggplot() +
+  geom_polygon(data = USA_CAN_MEX, aes(x = long, y = lat,                          ## set up map data
+                                       group = group),                             ## map group = group for map to work
+               color = "black", fill = "gray") +                                   ## change outline and fill color   
+  geom_point(data = meteorites, aes(x = long, y = lat, color = mass)) +            ## input meteorites data to plot
+  scale_color_viridis_c(trans = "log10") +                                         ## change color of meteorite mass points 
+  theme(panel.background = element_rect(fill = "lightblue2")) +                    ## make the background ocean blue
+  coord_map(projection = "mercator",                                               ## change projection to mercator
+            xlim = c(-180,-30), ylim = c(10, 70)) +                                ## set range for longitude and latitude to show only filtered regions
+  labs(title = "Meteorites Fallen in USA, Canada, and Mexico",                     ## set plot title 
+       x = "Longtitude", y = "Latitude",                                           ## set axes titles
+       caption = "Meteorites Data reported by the Meteoritical Society of NASA",   ## add caption
+       color = "Mass (g)")                                                         ## change legend title
+```
+
+
+

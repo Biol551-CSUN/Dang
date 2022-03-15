@@ -1,0 +1,93 @@
+---
+title: "Bad/Good Plots"
+author: "Alex Dang"
+date: "3/14/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE,
+                      fig.path = '../output/')
+```
+
+## Abstract
+Two plots are created using the same "Chocolate Bar Ratings" data set from Tidy Tuesday Repository. One plot represents a 'Bad plot', where it is incomprehensive and fail to represent its data set. The second plot represents a 'Good plot' that demonstrate the data set clearly and is easy to understand.
+
+
+## Load libraries
+Loading all the necessary libraries
+```{r}
+library(tidyverse)
+library(here)
+library(sysfonts)
+library(showtextdb)
+library(showtext)
+library(emojifont)
+library(beyonce)
+
+## Add font
+font_add_google("Yanone Kaffeesatz", "yanone")
+```
+
+
+## Load data frame
+```{r}
+Chocolate<-read_csv(here("week_7", "data", "chocolate.csv"))
+view(Chocolate)
+```
+
+
+## Bad plot data analysis
+This section will illustrate the construction of a 'Bad plot'.
+
+What makes this a bad plot?
+
+1. It is too compacted. Too much going on. Some data wrangling is needed to a cleaner data frame and plot.
+
+2. Background color is not suitable. It is difficult to see the plot and the color does not appear "brown". A different color palette would be a better approach.
+
+3. Plot title does not clearly explains what the plot is of. 
+
+4. Title sizes are too small compared to the entire plot.
+```{r}
+ggplot() +
+  geom_boxplot(data = Chocolate, 
+               aes(x = rating, y = country_of_bean_origin,
+                   color = cocoa_percent)) +
+  labs(title = "Chocolate!!!",
+       x = "Rating", y = "Country of Origin",
+       caption = "Flavors of Cacao by Will Canniford on Goldberg",
+       color = "Cocoa %") +
+  theme(panel.background = element_rect(fill = "brown2"))
+```
+
+
+## Good plot data analysis
+This section will illustrate the construction of a 'Good plot'.
+```{r}
+Chocolate_clean<-Chocolate %>% 
+  drop_na() %>%  
+  select(country_of_bean_origin, cocoa_percent, rating) %>% 
+  filter(country_of_bean_origin == "Ghana"| country_of_bean_origin == "Indonesia"| country_of_bean_origin == "Nigeria"| 
+           country_of_bean_origin == "Cameron"| country_of_bean_origin == "Ivory Coast"| country_of_bean_origin == "Brazil"|
+           country_of_bean_origin == "Ecuador"| country_of_bean_origin == "Peru"| country_of_bean_origin == "Colombia"| 
+           country_of_bean_origin == "Dominican Republic")
+  
+  
+view(Chocolate_clean)
+
+showtext_auto()
+
+ggplot(data = Chocolate_clean, 
+             mapping = aes(x = rating, y = cocoa_percent, color = country_of_bean_origin)) +
+  geom_point() +
+  labs(title = "Chocolate Rating Relative to Cocoa Percent in Most Cocoa Producing Countries", 
+       x = "Rating", y = "Cocoa %", color = "Country of Origin", 
+       caption = "Flavors of Cacao by Will Canniford on Goldberg") + 
+  scale_color_manual(values = beyonce_palette(81)) +
+  theme(plot.title = element_text(size = 34, hjust = 0.5, family = "yanone"),
+        axis.title = element_text(size = 26, family = "yanone"),
+        panel.border = element_rect(fill = NA, color = "black"), 
+        panel.background = element_rect(fill = "lavenderblush"), 
+        legend.title = element_text(size = 26, family = "yanone"))
+```

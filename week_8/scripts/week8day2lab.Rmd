@@ -1,0 +1,87 @@
+---
+title: "Pracyice writing functions"
+author: "Alex Dang"
+date: "3/17/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,  warning = FALSE, message = FALSE,
+                      fig.path = '../output/')
+```
+## Abstract
+Today's lab include creating two functions using data from the Pamlerpenguins package. To make the scientific cringe, data will be converted to the Imperial and U.S. Measurement Systems in the first function. The second function will showcase a penguin plot. 
+
+
+## Load libraries
+```{r}
+library(tidyverse)
+library(here)
+library(palmerpenguins)
+library(PNWColors)
+library(sysfonts)
+library(showtextdb)
+library(showtext)
+```
+
+
+## Add fonts
+```{r}
+font_add_google("Yanone Kaffeesatz", "yanone")
+```
+
+## Write functions
+To review data in Imperial and U.S. Measurement systems:
+```{r}
+## Goal:
+body_mass_lb<-(penguins $ body_mass_g*0.00220462) ## converting grams to pounds
+
+## Write the function:
+g_to_lb<-function(body_mass_lb){
+  body_mass_lb<-(penguins $ body_mass_g*0.00220462)
+  return(body_mass_lb)
+}
+
+## Test function:
+g_to_lb(3750)
+
+
+## Goal:
+flipper_length_inch<-(penguins $flipper_length_mm*0.0393701) ## converting millimeters to inches
+
+## Write the function:
+mm_to_inch<-function(flipper_length_mm){
+  flipper_length_inch<-(penguins $flipper_length_mm*0.0393701)
+  return(flipper_length_inch)
+}
+
+## Test function:
+mm_to_inch(195)
+```
+
+To plot data with a function:
+```{r, peng_mass_flipper, outwidth = "50%", fig.align='center'}
+showtext_auto()
+## Write function:
+peng_plot<-function(data = penguins, x, y){
+ggplot(data, 
+       aes(x = {{x}}, y = {{y}},
+           color = species)) +
+  geom_point() +
+  scale_color_manual(values = pal) +
+  facet_wrap(~island) +
+  theme(plot.title = element_text(size = 36, hjust = 0.5, family = "yanone"),
+        axis.title = element_text(size = 24, family = "yanone"),
+        panel.border = element_rect(fill = NA, color = "black"), 
+        legend.title = element_text(size = 26, family = "yanone"))
+}
+
+## Test function:
+pal<-pnw_palette("Shuksan",5, type = "discrete")
+peng_plot(x = g_to_lb(3750), y = mm_to_inch(195)) +
+  labs(title = "Comparing Body Mass to Flipper Length",
+       x = "Body Mass (lb)",
+       y = "Flipper Length (inch)", 
+       color = "Species", 
+       caption = "Source: Palmerpenguins")
+```

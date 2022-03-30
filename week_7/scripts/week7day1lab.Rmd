@@ -50,6 +50,7 @@ ggplot() +
        x = "Longtitude", y = "Latitude",                                           ## set axes titles
        caption = "Meteorites Data reported by the Meteoritical Society of NASA",   ## add caption
        color = "Mass (g)")                                                         ## change legend title
+ggsave(here("week_7", "output", "Meteroites_North_America.png"))
 ```
 
 

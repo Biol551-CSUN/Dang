@@ -37,7 +37,19 @@
 * Script: [day 2 lecture](https://github.com/Biol551-CSUN/Dang/blob/main/week_6/scripts/week6day2lecture.Rmd), [day2 lab](https://github.com/Biol551-CSUN/Dang/blob/main/week_6/scripts/week6day2lab.Rmd)
 * Output: [penguins1](https://github.com/Biol551-CSUN/Dang/blob/main/week_6/output/penguin1-1.png), [bees1](https://github.com/Biol551-CSUN/Dang/blob/main/week_6/output/bees1-1.png)
 
-<u> Week 7: <u>
+<u> Week 7: <u> practice with making map plots, and creating bad plots vs. good plots
+* Data: [CA Population Data](https://github.com/Biol551-CSUN/Dang/blob/main/week_7/data/CAPopdata.csv), [Maunalua Chemical Data](https://github.com/Biol551-CSUN/Dang/blob/main/week_7/data/chemicaldata_maunalua.csv), [Meteorite Impact](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-06-11), [Chocolate Bar Ratings](https://github.com/rfordatascience/tidytuesday/blob/master/data/2022/2022-01-18/readme.md)
+* Scripts:[day 1 lecture](https://github.com/Biol551-CSUN/Dang/blob/main/week_7/scripts/week7day1lect.R), [day 1 lab](https://github.com/Biol551-CSUN/Dang/blob/main/week_7/scripts/week7day1lab.Rmd), [day 2 lecture](https://github.com/Biol551-CSUN/Dang/blob/main/week_7/scripts/week7day2lect.R), [day 2 lab](https://github.com/Biol551-CSUN/Dang/blob/main/week_7/scripts/week7day2lab.Rmd)
+* Output: [CA Population Map](https://github.com/Biol551-CSUN/Dang/blob/main/week_7/output/CApop.pdf), [Meteorite Impact in North America](https://github.com/Biol551-CSUN/Dang/blob/main/week_7/output/Meteroites_North_America.png), [Bad Plot](https://github.com/Biol551-CSUN/Dang/blob/main/week_7/output/unnamed-chunk-3-1.png), [Good Plot](https://github.com/Biol551-CSUN/Dang/blob/main/week_7/output/unnamed-chunk-4-1.png)
+
+<u> Week 8: <u> practice advanced plotting with more R packages, and practice writing functions
+* Data: Palmer penguins package
+* Scripts: [day 1 lecture](https://github.com/Biol551-CSUN/Dang/blob/main/week_8/scripts/week8day1lect.R), [day 2 lecture](https://github.com/Biol551-CSUN/Dang/blob/main/week_8/scripts/week8day2lect.R), [day 2 lab](https://github.com/Biol551-CSUN/Dang/blob/main/week_8/scripts/week8day2lab.Rmd)
+* Output: [Penguin gif](https://github.com/Biol551-CSUN/Dang/blob/main/week_8/output/mypenguingif.gif), [penplot for function writing practice](https://github.com/Biol551-CSUN/Dang/blob/main/week_8/output/penplot.png), [Comparing Body Mass to Flipper Length](https://github.com/Biol551-CSUN/Dang/blob/main/week_8/output/peng_mass_flipper-1.png)
+
+<u> Week 9: <u> N/A
+
+<u> Week 10: <u> 
 * Data:
 * Scripts:
-* Output:
+* Output: 

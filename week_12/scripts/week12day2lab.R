@@ -34,10 +34,18 @@ intertidal_clean <- intertidal %>%
          Quadrat = factor(Quadrat, levels = c('Low', 'Mid', 'High'))) %>% 
   filter(Algae>5, !is.na(Quadrat))
 view(intertidal_clean)
+
+showtext_auto()
+
 intertidal_clean %>% 
   ggplot(aes(x = Quadrat, y = Algae, 
              fill = Site)) +
   geom_col() +
   labs(title = "Intertidal Algae Population", 
        x = "Tide Height", y = "Algae Count") +
-  theme(plot.background = element_rect(fill = "beige"))
+  theme(plot.background = element_rect(fill = "beige"), 
+        plot.title = element_text(size = 26, hjust = 0.5, family = "yanone"),
+        axis.title = element_text(size = 18, family = "yanone"), 
+        legend.title = element_text(size = 18, family = "yanone"))
+ggsave(here("week_12", "output", "intertidal_algae.png"), 
+       width = 4, height = 5)
